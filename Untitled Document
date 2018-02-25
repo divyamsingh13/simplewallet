@@ -1,0 +1,5 @@
+sudo bower install --save angular angular-route --allow-root 
+sudo bower init --allow-root
+truffle init
+
+
