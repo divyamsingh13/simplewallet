@@ -1,7 +1,8 @@
 "use strict";
-var Web3 = require(['vendor/web3/dist/web3']);
+var Web3 = require(['vendor/web3/dist/web3'])
+var web3 = new Web3(web3.currentProvider);
 
-web3.setProvider(new Web3.providers.IpcProvider('ws://localhost:8546'));
+/*web3.setProvider(new Web3.providers.HttpProvider("http://localhost:8545"));*/
 if(!web3.currentProvider)
     try {
         web3.setProvider(new web3.providers.HttpProvider("http://localhost:8545"));
