@@ -1,0 +1,6 @@
+ geth --ipcpath geth1/geth.ipc --datadir /geth1 --dev init geth/genesis.json
+mist --rpc geth12/geth.ipc
+geth --datadir /geth1 console
+
+
+
