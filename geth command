@@ -1,6 +1,11 @@
- geth --ipcpath geth1/geth.ipc --datadir /geth1 --dev init geth/genesis.json
+ geth --ipcpath geth12/geth.ipc --datadir /geth12 --dev init geth/genesis.json
 mist --rpc geth12/geth.ipc
-geth --datadir /geth1 console
+geth --datadir /geth12 --rpcport 8545 console 
+
+
+to connect to remix
+
+sudo geth --datadir /geth12 --rpcport 8545 --rpc --rpccorsdomain "https://remix.ethereum.org" console
 
 
 
